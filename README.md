@@ -3,7 +3,7 @@ Here’s a **clean, minimal, and professional README** (no unnecessary details, 
 ---
 
 ````markdown
-# CivicResolve 🤝
+ CivicResolve 🤝
 
 A full-stack web application that enables citizens to report civic issues and helps authorities manage and resolve them efficiently.
 
