@@ -1,98 +1,218 @@
-Welcome to CivicResolve 🤝
-Empowering Communities to Build Better Cities.
+Here’s your **clean, professional, recruiter-level README.md** (polished, structured, and GitHub-ready):
 
-Hi there! Welcome to the repository for CivicResolve.
+---
 
-We believe that great neighborhoods start with engaged citizens. Yet, reporting simple issues like a broken streetlight or a pothole can often feel complicated or unresponsive. CivicResolve changes that.
+````markdown
+# 🚀 CivicResolve 🤝  
+### Empowering Communities to Build Better Cities
 
-It's a comprehensive platform built to bridge the gap between residents and local authorities. We make it incredibly easy for people to report issues (pinpointing them exactly on a map 📍) and just as easy for authorities to track, assign, and resolve them.
+Welcome to **CivicResolve** — a platform designed to bridge the gap between citizens and local authorities.
 
-🚀 Live Demo
-Check out the live application:
+We believe that better cities are built through active citizen participation. CivicResolve makes it simple to report, track, and resolve civic issues like potholes, broken streetlights, and water leaks — all from one place.
 
-Frontend (Vercel): https://civic-resolve-nx9n.vercel.app
-Backend API (Render): https://civicresole-backend-api.onrender.com
-Note: This is the API base URL. Direct access might show a 404 or white label error page unless hitting a valid endpoint like /api/test/ping (if available).
-🌟 Key Features
-👤 For Citizens
-Easy Issue Reporting: Report issues with titles, descriptions, and categories.
-Visual Evidence: Upload "Before" images to validate reports.
-Geolocation: Pinpoint the exact location of the issue using an interactive map.
-Track Progress: View the status of reported issues in real-time.
-Feedback: Rate the resolution quality after an issue is fixed.
-Secure Access: Login via Email/Password or Google OAuth. Includes "Forgot Password" functionality.
-🛡️ For Administrators
-Dashboard: A powerful overview of all reported issues.
-Issue Management: Review, approve, or reject reports.
-Contractor Assignment: Assign approved issues to registered contractors based on location (Pincode).
-User Management: Manage citizen and contractor accounts.
-Analytics: Visualize data on reported issues and resolution rates.
-👷 For Contractors
-Job Board: View issues assigned to their specific area.
-Workflow Management: Update status from "In Progress" to "Resolved".
-Proof of Work: Upload "After" images to demonstrate resolution.
-Profile: Manage professional details and service areas.
-🚀 What's Under the Hood?
-We've built this using a robust, modern stack to ensure it's fast, reliable, and secure.
+---
 
-The Brains (Backend) 🧠
-Java 21 & Spring Boot 3: For a solid, high-performance foundation.
-Spring Data JPA (Hibernate): For efficient database interactions.
-Spring Security & JWT: To ensure secure, stateless authentication.
-Java Mail Sender: For sending welcome emails, status updates, and password reset links.
-MySQL: To keep all our data organized and safe.
-The Face (Frontend) 🎨
-React (Vite): For a snappy, smooth user experience.
-React Bootstrap: For a responsive, clean UI.
-Framer Motion: For smooth animations and transitions.
-Leaflet & React-Leaflet: For interactive maps and clustering.
-Chart.js: For visualizing administrative data.
-Google OAuth: For seamless social login.
-🛠️ Getting Started
-Want to spin this up on your own machine? Awesome! Here is how to get everything running.
+## 🌐 Live Demo
 
-Prerequisites
-Java 21 installed.
-Node.js 18+ installed.
-MySQL running on your computer.
-1. Setting up the Backend ⚙️
-Navigate to the backend folder:
+- 🔗 **Frontend (Vercel):** https://civic-resolve-nx9n.vercel.app  
+- 🔗 **Backend API (Render):** https://civicresole-backend-api.onrender.com  
 
+> Note: Backend URL is the base API. Use valid endpoints to test functionality.
+
+---
+
+## 🌟 Key Features
+
+### 👤 For Citizens
+- Report issues with title, description, and category  
+- Upload images as proof  
+- Pinpoint location using interactive maps 📍  
+- Track issue status in real-time  
+- Provide feedback after resolution  
+- Secure login (Email/Password + Google OAuth)  
+
+---
+
+### 🛡️ For Administrators
+- Central dashboard to monitor all issues  
+- Approve or reject reports  
+- Assign tasks to contractors (based on location)  
+- Manage users (citizens & contractors)  
+- View analytics and reports  
+
+---
+
+### 👷 For Contractors
+- View assigned issues  
+- Update issue status (In Progress → Resolved)  
+- Upload "after" images as proof  
+- Manage profile and service areas  
+
+---
+
+## ⚙️ Tech Stack
+
+### 🧠 Backend
+- Java 21  
+- Spring Boot 3  
+- Spring Data JPA (Hibernate)  
+- Spring Security + JWT Authentication  
+- MySQL  
+- Java Mail Sender  
+
+---
+
+### 🎨 Frontend
+- React (Vite)  
+- React Bootstrap  
+- Framer Motion  
+- Leaflet & React-Leaflet (Maps)  
+- Chart.js  
+- Google OAuth  
+
+---
+
+## 🛠️ Getting Started
+
+### 📌 Prerequisites
+- Java 21  
+- Node.js 18+  
+- MySQL  
+
+---
+
+### 🔧 Backend Setup
+
+```bash
 cd Backend/civicresolve-backend
-Configure the Database:
+````
 
-Create a new database in MySQL called civicresolve.
-Open src/main/resources/application.properties.
-Update spring.datasource.username and spring.datasource.password with your credentials.
-Note: The server runs on port 8080 by default.
-Run the Application:
+1. Create MySQL database:
 
+```
+civicresolve
+```
+
+2. Configure:
+
+```
+src/main/resources/application.properties
+```
+
+Update:
+
+```
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+```
+
+3. Run:
+
+```bash
 ./mvnw spring-boot:run
-2. Setting up the Frontend 🖥️
-Navigate to the frontend folder:
+```
 
+---
+
+### 💻 Frontend Setup
+
+```bash
 cd Frontend/civicresolve-frontend
-Install Dependencies:
+```
 
+1. Install dependencies:
+
+```bash
 npm install
-# If you encounter peer dependency issues:
+```
+
+(If error:)
+
+```bash
 npm install --legacy-peer-deps
-Environment Variables:
+```
 
-Create a .env file in the root of the frontend folder.
-Add your keys:
+2. Create `.env` file:
+
+```
 VITE_GOOGLE_CLIENT_ID=your_google_client_id
-# Add other keys as required
-Launch the App:
+```
 
+3. Run app:
+
+```bash
 npm run dev
-Open http://localhost:5173 to view it in your browser.
+```
 
-🔒 Security & Privacy
-We use BCrypt to hash user passwords.
-JWT Tokens are used for session management.
-Role-Based Access Control (RBAC) ensures users only access what they're supposed to.
-📸 Screenshots
-(Add screenshots of your Dashboard, Login Page, and Issue Map here)
+Open 👉 [http://localhost:5173](http://localhost:5173)
 
-Happy Coding! ✨
+---
+
+## 🔒 Security
+
+* Passwords hashed using BCrypt
+* JWT-based authentication
+* Role-Based Access Control (RBAC)
+* Environment variables for sensitive data
+
+---
+
+## 📸 Screenshots
+
+> Add screenshots here:
+
+* Dashboard
+* Issue Map
+* Login Page
+
+---
+
+## 📌 Future Enhancements
+
+* Real-time notifications
+* Mobile app version
+* AI-based issue categorization
+* Advanced analytics dashboard
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit a pull request.
+
+---
+
+## 👨‍💻 Author
+
+**Mahi Rusia**
+
+* GitHub: [https://github.com/mahirusia123](https://github.com/mahirusia123)
+* LinkedIn: [https://www.linkedin.com/in/mahirusia/](https://www.linkedin.com/in/mahirusia/)
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+---
+
+### ✨ Happy Coding!
+
+```
+
+---
+
+## 🔥 Why this README is 🔝 (important for you)
+- Clean structure (recruiter-friendly)
+- Proper sections (projects look professional)
+- Shows **real-world skills**
+- ATS + GitHub portfolio optimized
+
+---
+
+If you want next level:
+✅ Add **badges (build, tech stack)**  
+✅ Add **architecture diagram**  
+✅ Make it **top 1% GitHub project**
+```
