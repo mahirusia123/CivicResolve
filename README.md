@@ -1,218 +1,90 @@
-Here’s your **clean, professional, recruiter-level README.md** (polished, structured, and GitHub-ready):
+Here’s a **clean, minimal, and professional README** (no unnecessary details, highly effective 👇)
 
 ---
 
 ````markdown
-# 🚀 CivicResolve 🤝  
-### Empowering Communities to Build Better Cities
+# CivicResolve 🤝
 
-Welcome to **CivicResolve** — a platform designed to bridge the gap between citizens and local authorities.
-
-We believe that better cities are built through active citizen participation. CivicResolve makes it simple to report, track, and resolve civic issues like potholes, broken streetlights, and water leaks — all from one place.
+A full-stack web application that enables citizens to report civic issues and helps authorities manage and resolve them efficiently.
 
 ---
 
-## 🌐 Live Demo
+## 🚀 Live Demo
 
-- 🔗 **Frontend (Vercel):** https://civic-resolve-nx9n.vercel.app  
-- 🔗 **Backend API (Render):** https://civicresole-backend-api.onrender.com  
-
-> Note: Backend URL is the base API. Use valid endpoints to test functionality.
+- Frontend: https://civic-resolve-nx9n.vercel.app  
+- Backend: https://civicresole-backend-api.onrender.com  
 
 ---
 
-## 🌟 Key Features
+## 🌟 Features
 
-### 👤 For Citizens
-- Report issues with title, description, and category  
-- Upload images as proof  
-- Pinpoint location using interactive maps 📍  
+- Report issues with description, category, and location 📍  
+- Upload images for better validation  
 - Track issue status in real-time  
-- Provide feedback after resolution  
-- Secure login (Email/Password + Google OAuth)  
-
----
-
-### 🛡️ For Administrators
-- Central dashboard to monitor all issues  
-- Approve or reject reports  
-- Assign tasks to contractors (based on location)  
-- Manage users (citizens & contractors)  
-- View analytics and reports  
-
----
-
-### 👷 For Contractors
-- View assigned issues  
-- Update issue status (In Progress → Resolved)  
-- Upload "after" images as proof  
-- Manage profile and service areas  
+- Role-based access (Citizen, Admin, Contractor)  
+- Admin dashboard for issue management  
+- Contractor workflow for resolving assigned tasks  
 
 ---
 
 ## ⚙️ Tech Stack
 
-### 🧠 Backend
-- Java 21  
-- Spring Boot 3  
-- Spring Data JPA (Hibernate)  
-- Spring Security + JWT Authentication  
-- MySQL  
-- Java Mail Sender  
+**Frontend:** React (Vite), Bootstrap  
+**Backend:** Spring Boot, Spring Security, JWT  
+**Database:** MySQL  
+**Other:** REST APIs, Google OAuth, Leaflet Maps  
 
 ---
 
-### 🎨 Frontend
-- React (Vite)  
-- React Bootstrap  
-- Framer Motion  
-- Leaflet & React-Leaflet (Maps)  
-- Chart.js  
-- Google OAuth  
+## 🛠️ Setup
 
----
-
-## 🛠️ Getting Started
-
-### 📌 Prerequisites
-- Java 21  
-- Node.js 18+  
-- MySQL  
-
----
-
-### 🔧 Backend Setup
-
+### Backend
 ```bash
 cd Backend/civicresolve-backend
+./mvnw spring-boot:run
 ````
 
-1. Create MySQL database:
-
-```
-civicresolve
-```
-
-2. Configure:
-
-```
-src/main/resources/application.properties
-```
-
-Update:
-
-```
-spring.datasource.username=your_username
-spring.datasource.password=your_password
-```
-
-3. Run:
-
-```bash
-./mvnw spring-boot:run
-```
-
----
-
-### 💻 Frontend Setup
+### Frontend
 
 ```bash
 cd Frontend/civicresolve-frontend
-```
-
-1. Install dependencies:
-
-```bash
 npm install
-```
-
-(If error:)
-
-```bash
-npm install --legacy-peer-deps
-```
-
-2. Create `.env` file:
-
-```
-VITE_GOOGLE_CLIENT_ID=your_google_client_id
-```
-
-3. Run app:
-
-```bash
 npm run dev
 ```
-
-Open 👉 [http://localhost:5173](http://localhost:5173)
 
 ---
 
 ## 🔒 Security
 
-* Passwords hashed using BCrypt
 * JWT-based authentication
-* Role-Based Access Control (RBAC)
+* Role-Based Access Control
 * Environment variables for sensitive data
-
----
-
-## 📸 Screenshots
-
-> Add screenshots here:
-
-* Dashboard
-* Issue Map
-* Login Page
-
----
-
-## 📌 Future Enhancements
-
-* Real-time notifications
-* Mobile app version
-* AI-based issue categorization
-* Advanced analytics dashboard
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to fork the repo and submit a pull request.
 
 ---
 
 ## 👨‍💻 Author
 
-**Mahi Rusia**
-
-* GitHub: [https://github.com/mahirusia123](https://github.com/mahirusia123)
-* LinkedIn: [https://www.linkedin.com/in/mahirusia/](https://www.linkedin.com/in/mahirusia/)
+Mahi Rusia
+GitHub: [https://github.com/mahirusia123](https://github.com/mahirusia123)
 
 ---
 
-## ⭐ Support
-
-If you like this project, give it a ⭐ on GitHub!
-
----
-
-### ✨ Happy Coding!
+⭐ If you found this useful, consider giving it a star!
 
 ```
 
 ---
 
-## 🔥 Why this README is 🔝 (important for you)
-- Clean structure (recruiter-friendly)
-- Proper sections (projects look professional)
-- Shows **real-world skills**
-- ATS + GitHub portfolio optimized
+## ✅ Why this version is better
+- Short and clean (recruiters prefer this)
+- No overload of info
+- Highlights **skills + project clearly**
+- Easy to scan in **10–15 seconds**
 
 ---
 
-If you want next level:
-✅ Add **badges (build, tech stack)**  
-✅ Add **architecture diagram**  
-✅ Make it **top 1% GitHub project**
+If you want, I can make it even stronger by adding:
+✅ :contentReference[oaicite:0]{index=0}  
+✅ :contentReference[oaicite:1]{index=1}  
+✅ :contentReference[oaicite:2]{index=2}
 ```
